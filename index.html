@@ -17,16 +17,17 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <label for="iemail"><span class="material-symbols-outlined">person</span></label>
-                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="seu email">
+                        <label for="ilogin"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="login" id="ilogin" autocomplete="email" placeholder="seu email" required maxlength="30">
                     </div>
                     <div class="campo">
                         <label for="isenha"><span class="material-symbols-outlined">key</span></label>
-                        <input type="password" name="senha" id="isenha" placeholder="sua senha">
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="sua senha" required minlength="8" maxlength="20">
                     </div>
         
                     <input id="button" type="submit" value="Entrar">
-                    <input id="button" type="submit" value="Esqueci a senha">
+                    <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
         
                 </form>
             </div>
