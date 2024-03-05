@@ -8,30 +8,30 @@
     <title>Login</title>
 </head>
 <body>
-    <section>
-        <img src="imagens/banner.jpg" alt="banner">
-        <div>
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-
-            <form action="cadastro.php" method="get" autocomplete="on">
-
-                <div>
-                    <label for="iemail"><span class="material-symbols-outlined">person</span></label>
-                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="seu email">
-                </div>
-
-                <div>
-                    <label for="isenha"><span class="material-symbols-outlined">key</span></label>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha">
-                </div>
-
-                
-                <input id="button" type="submit" value="Entrar">
-                <input id="button" type="submit" value="Esqueci a senha">
-                
-            </form>
-        </div>
-    </section>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <img src="imagens/banner.jpg" alt="banner">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="loogin.php" method="post" autocomplete="on">
+                    <div>
+                        <label for="iemail"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="seu email">
+                    </div>
+                    <div>
+                        <label for="isenha"><span class="material-symbols-outlined">key</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha">
+                    </div>
+        
+                    <input id="button" type="submit" value="Entrar">
+                    <input id="button" type="submit" value="Esqueci a senha">
+        
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

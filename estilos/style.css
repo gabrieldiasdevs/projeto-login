@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/* PALETA DE CORES */
+
+:root {
+    --verde: #49A09D; 
+    --lilas: #5F2C82;
+}
+
 * {
     margin: 0;
     padding: 0;
